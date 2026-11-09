@@ -1,0 +1,9 @@
+{
+  "name": "time-tracker",
+  "version": "1.0.0",
+  "description": "A simple browser-based time tracker",
+  "private": true,
+  "scripts": {
+    "test": "node --test"
+  }
+}

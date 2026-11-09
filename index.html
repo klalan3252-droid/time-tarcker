@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Time Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header class="today">
+      <h1>Today</h1>
+      <p id="today-total" class="today-total" aria-live="polite">00:00:00</p>
+    </header>
+
+    <form id="timer-form" class="timer" autocomplete="off">
+      <label for="description">What are you working on?</label>
+      <input id="description" type="text" placeholder="Optional description" maxlength="200">
+      <div id="elapsed" class="elapsed" role="timer" aria-label="Elapsed time">00:00:00</div>
+      <div class="sweep" aria-hidden="true"><span id="sweep"></span></div>
+      <button id="toggle" type="submit">Start</button>
+    </form>
+
+    <section aria-labelledby="entries-heading">
+      <h2 id="entries-heading">Entries</h2>
+      <p id="empty" class="empty">Nothing tracked yet.</p>
+      <ul id="entries" class="entries"></ul>
+    </section>
+  </main>
+
+  <script src="src/tracker.js"></script>
+  <script src="src/storage.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>
