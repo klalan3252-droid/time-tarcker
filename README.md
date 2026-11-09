@@ -16,7 +16,7 @@ Open `index.html` in a browser (double-click it, or `file://` path). Data is kep
 Requires Node 18+. No install needed:
 
 ```
-npm test        # or: node --test test/
+npm test        # or: node --test
 ```
 
 ## Layout
